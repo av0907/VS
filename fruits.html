@@ -1,0 +1,584 @@
+<html>
+    <head>
+        <title>Fruits</title>
+        <style>
+        </style>
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="./styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Kanit|Lobster&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+        function fapple(b)
+        {
+        var w=parseInt(document.getElementById("q").value);
+        document.getElementById("p").value=b*w;
+        }
+        function fbanana(b)
+        {
+        var w=parseInt(document.getElementById("q1").value);
+        document.getElementById("p1").value=b*w;
+        }
+        function fbgrapes(b)
+        {
+        var w=parseInt(document.getElementById("q2").value);
+        document.getElementById("p2").value=b*w;
+        }
+        function fggrapes(b)
+        {
+        var w=parseInt(document.getElementById("q3").value);
+        document.getElementById("p3").value=b*w;
+        }
+        function fguava(b)
+        {
+        var w=parseInt(document.getElementById("q4").value);
+        document.getElementById("p4").value=b*w;
+        }
+        function forange(b)
+        {
+        var w=parseInt(document.getElementById("q5").value);
+        document.getElementById("p5").value=b*w;
+        }
+        
+        function fpomogranate(b)
+        {
+        var w=parseInt(document.getElementById("q6").value);
+        document.getElementById("p6").value=b*w;
+        }
+        function fpapaya(b)
+        {
+        var w=parseInt(document.getElementById("q7").value);
+        document.getElementById("p7").value=b*w;
+        }
+        function appleadd()
+        {
+            if(document.getElementById("q").value=='')
+            {
+                document.getElementById("q").value=0;
+            }
+            document.getElementById("q").value=parseInt(document.getElementById("q").value)+1;
+        }
+       function applesub()
+        {
+            if(parseInt(document.getElementById("q").value)>0){
+            document.getElementById("q").value=parseInt(document.getElementById("q").value)-1;}
+        }
+        function bananaadd()
+        {
+            if(document.getElementById("q1").value=='')
+            {
+                document.getElementById("q1").value=0;
+            }
+            document.getElementById("q1").value=parseInt(document.getElementById("q1").value)+1;
+        }
+       function bananasub()
+        {
+            if(parseInt(document.getElementById("q1").value)>0){
+            document.getElementById("q1").value=parseInt(document.getElementById("q1").value)-1;}
+        }
+        function bgrapesadd()
+        {
+            if(document.getElementById("q2").value=='')
+            {
+                document.getElementById("q2").value=0;
+            }
+            document.getElementById("q2").value=parseInt(document.getElementById("q2").value)+1;
+        }
+       function bgrapessub()
+        {
+            if(parseInt(document.getElementById("q2").value)>0){
+            document.getElementById("q2").value=parseInt(document.getElementById("q2").value)-1;}
+        }
+        function ggrapesadd()
+        {
+            if(document.getElementById("q3").value=='')
+            {
+                document.getElementById("q3").value=0;
+            }
+            document.getElementById("q3").value=parseInt(document.getElementById("q3").value)+1;
+        }
+       function ggrapessub()
+        {
+            if(parseInt(document.getElementById("q3").value)>0){
+            document.getElementById("q3").value=parseInt(document.getElementById("q3").value)-1;}
+        }
+        function guavaadd()
+        {
+            if(document.getElementById("q4").value=='')
+            {
+                document.getElementById("q4").value=0;
+            }
+            document.getElementById("q4").value=parseInt(document.getElementById("q4").value)+1;
+        }
+       function guavasub()
+        {
+            if(parseInt(document.getElementById("q4").value)>0){
+            document.getElementById("q4").value=parseInt(document.getElementById("q4").value)-1;}
+        }
+        function orangeadd()
+        {
+            if(document.getElementById("q5").value=='')
+            {
+                document.getElementById("q5").value=0;
+            }
+            document.getElementById("q5").value=parseInt(document.getElementById("q5").value)+1;
+        }
+       function orangesub()
+        {
+            if(parseInt(document.getElementById("q5").value)>0){
+            document.getElementById("q5").value=parseInt(document.getElementById("q5").value)-1;}
+        }
+        function pomogranateadd()
+        {
+            if(document.getElementById("q6").value=='')
+            {
+                document.getElementById("q6").value=0;
+            }
+            document.getElementById("q6").value=parseInt(document.getElementById("q6").value)+1;
+        }
+       function pomogranatesub()
+        {
+            if(parseInt(document.getElementById("q6").value)>0){
+            document.getElementById("q6").value=parseInt(document.getElementById("q6").value)-1;}
+        }
+        function papayaadd()
+        {
+            if(document.getElementById("q7").value=='')
+            {
+                document.getElementById("q7").value=0;
+            }
+            document.getElementById("q7").value=parseInt(document.getElementById("q7").value)+1;
+        }
+       function papayasub()
+        {
+            if(parseInt(document.getElementById("q7").value)>0){
+            document.getElementById("q7").value=parseInt(document.getElementById("q7").value)-1;}
+        }
+        function appleaddtocart()
+        {
+          
+          var name="Apple";
+          var quantity=document.getElementById("q").value;
+          var cost=document.getElementById("p").value;
+          alert(name);
+        }
+        function bananaaddtocart()
+        {
+          
+          var name="banana";
+          var quantity=document.getElementById("q1").value;
+          var cost=document.getElementById("p1").value;
+        }
+        function bgrapesaddtocart()
+        {
+          
+          var name="Black grapes";
+          var quantity=document.getElementById("q2").value;
+          var cost=document.getElementById("p2").value;
+        }
+        function ggrapesaddtocart()
+        {
+          
+          var name="Green grapes";
+          var quantity=document.getElementById("q3").value;
+          var cost=document.getElementById("p3").value;
+        }
+        function guavaaddtocart()
+        {
+          
+          var name="Guava";
+          var quantity=document.getElementById("q4").value;
+          var cost=document.getElementById("p4").value;
+        }
+        function orangeaddtocart()
+        {
+          
+          var name="Orange";
+          var quantity=document.getElementById("q5").value;
+          var cost=document.getElementById("p5").value;
+        }
+        function appleaddtocart()
+        {
+          
+          var name="Pomogrante";
+          var quantity=document.getElementById("q6").value;
+          var cost=document.getElementById("p6").value;
+        }
+        function appleaddtocart()
+        {
+          
+          var name="Apple";
+          var quantity=document.getElementById("q").value;
+          var cost=document.getElementById("p").value;
+        }
+        
+        
+        </script>
+    </head>
+    <body>
+
+        <div class="titlebar">
+
+            <div class="title">
+                    JustlogKavali.com
+            </div>
+
+            <div class="login1">
+
+                    <div class="login">
+                      <a href="./login.html" style="color:cornsilk;text-decoration: none;"> Login</a>
+                    </div>
+    
+            </div>
+
+            <div class="signup1">
+
+                <div class="signup">
+                   <a href="./signup.html"  style="color:cornsilk;text-decoration: none;"> Sign-up</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="menubar">
+                
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        
+                        <div style="width:50%;">
+                          <div style="display:inline-block">
+                            <i class="material-icons" style="font-size:40px;color:blue;position:relative;left:1%;">call</i>
+                          </div>
+                          <div style="display:inline-block;position: relative;left:0.5%;color:4c4c4a;font-weight:600;">
+                             Call us now<br>
+                             +91 8247850199
+                          </div>
+                        </div>
+
+                        <ul class="nav justify-content-end">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="./fruits.html">Fruits</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./vegetables.html">Vegetables</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./grocery.html">Grocery</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./medicines.html">Medicines</a>
+                          </li>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <li><a href="./cart.html"><i class="fa fa-shopping-cart" style="font-size:36px;color:#0000ff;opacity:0.85;"></i></a></li>
+                                                  
+                        </ul>
+                  </nav>
+        </div>
+
+
+        <div class="verticallistcontainer" style="display: inline-block"  >
+
+            <div class="col-2.25" style="top:1%;position:sticky;">
+                <nav class="nav flex-sm-column" style="font-size:2.3vh;text-align:center">
+                    <a class="nav-link active" style="color:darkolivegreen;" href="#apple">Apples</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#banana">Bananas</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#bgrapes">Black Grapes</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#ggrapes">Green Grapes</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#guava">Guava</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#orange">Orange</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#pomogranate">Pomogranate</a>
+                      <a class="nav-link" style="color:darkolivegreen" href="#papaya">Papaya</a>
+                    
+                </nav>
+            </div>
+            
+        </div>
+         
+
+        <div class="fruitscards">
+          
+            <div class="card cardstyles" style="background-color:e7e8ed;" id="apple">
+                      <img src="./images/fruitsimages/apple1.jpg" class="card-img-top cardimages" alt="...">
+                      <div class="card-body">
+                        <form action="./test1.html">
+                        <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Apples(ఆపిల్)</h5>
+                        <table>
+                          
+                          <tr>
+                            <td>Quantity(in kgs):</td>
+                            <td><div>
+                                <button style="font-weight: 600;" onclick="applesub()">-</button>
+                                <input type="quantity" name="" id="q" style="width:20%;margin:-5px;">
+                                <button onclick="appleadd()">+</button>
+                            </div></td>
+                          </tr>
+
+                          <tr>
+                            <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                                <input type="radio" name="apple" id="abc" value="50" onblur="fapple(this.value)" unchecked>50
+                                <input type="radio" name="apple" id="abc" value="80" onblur="fapple(this.value)">80
+                             </td>
+                          </tr>
+
+                          <tr>
+                            <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                              <input type="text" name="price" id="p" readonly>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--<a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                        <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%" onclick="appleaddtocart(abc1.value)" type="submit">Add to Cart</a>-->
+                        <button type="button" class="btn btn-secondary" style="float: right" onclick="appleaddtocart()">Add to cart</button>
+                      </div>
+            </div>
+
+            <div class="card cardstyles" style="background-color:e7e8ed;" id="banana">
+                <img src="./images/fruitsimages/banana.jpg" class="card-img-top cardimages" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Bananas(అరటి పండ్లు)</h5>
+                  <table>
+                    
+                    <tr>
+                        <td>Quantity(in kgs):</td>
+                        <td><div>
+                            <button style="font-weight: 600;" onclick="bananasub()">-</button>
+                            <input type="quantity" name="" id="q1" style="width:20%;margin:-5px;">
+                            <button onclick="bananaadd()">+</button>
+                        </div></td>
+                      </tr>
+
+                      <tr>
+                        <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="radio" name="banana" id="abc1" value="40" onblur="fbanana(this.value)" unchecked>Rs.40/kg
+                            <input type="radio" name="banana" id="abc1" value="60" onblur="fbanana(this.value)">Rs.60/kg
+                            </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                          <input type="text" name="price" id="p1" readonly>
+                        </td>
+                      </tr>
+                  </table>
+                  <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                  <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="card cardstyles" style="background-color:e7e8ed;" id="bgrapes">
+                  <img src="./images/fruitsimages/blackgrapes.jpg" class="card-img-top cardimages" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Black Grapes(నల్ల ద్రాక్ష )</h5>
+                    <table>
+                      
+                      <tr>
+                          <td>Quantity(in kgs):</td>
+                          <td><div>
+                              <button style="font-weight: 600;" onclick="bgrapessub()">-</button>
+                              <input type="quantity" name="" id="q2" style="width:20%;margin:-5px;">
+                              <button onclick="bgrapesadd()">+</button>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td><input type="radio" name="bgrapes" id="abc2" value="50" onblur="fbgrapes(this.value)" unchecked>Rs.50/kg
+                            <input type="radio" name="bgrapes" id="abc2" value="80" onblur="fbgrapes(this.value)">Rs.80/kg
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                          <input type="text" name="price" id="p2" readonly>
+                        </td>
+                      </tr>
+                    </table>
+                    <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                    <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                  </div>
+                </div>
+
+                <div class="card cardstyles" style="background-color:e7e8ed;" id="ggrapes">
+                    <img src="./images/fruitsimages/greengrapes.jpg" class="card-img-top cardimages" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Green grapes(ద్రాక్ష )</h5>
+                      <table>
+                        
+                        <tr>
+                            <td>Quantity(in kgs):</td>
+                            <td><div>
+                                <button style="font-weight: 600;" onclick="ggrapessub()">-</button>
+                                <input type="quantity" name="" id="q3" style="width:20%;margin:-5px;">
+                                <button onclick="ggrapesadd()">+</button>
+                            </div></td>
+                          </tr>
+                          <tr>
+                            <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="radio" name="ggrapes" id="abc3" value="30" onblur="fggrapes(this.value)"unchecked>Rs.30/kg
+                                <input type="radio" name="ggrapes" id="abc3" value="50" onblur="fggrapes(this.value)">Rs.50/kg
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                              <input type="text" name="price" id="p3" readonly>
+                            </td>
+                          </tr>
+                      </table>
+                      <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                      <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                    </div>
+                  </div>
+
+                  <div class="card cardstyles" style="background-color:e7e8ed;" id="guava">
+                      <img src="./images/fruitsimages/guava.jpg" class="card-img-top cardimages" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Guava(జామ పండ్లు)</h5>
+                        <table>
+                          
+                          <tr>
+                              <td>Quantity(in kgs):</td>
+                              <td><div>
+                                  <button style="font-weight: 600;" onclick="guavasub()">-</button>
+                                  <input type="quantity" name="" id="q4" style="width:20%;margin:-5px;">
+                                  <button onclick="guavaadd()">+</button>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td><input type="radio" name="guava" id="abc4" unchecked value="50" onblur="fguava(this.value)">Rs.50/kg
+                                <input type="radio" name="guava" id="abc4" value="80" onblur="fguava(this.value)">Rs.80/kg
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                              <input type="text" name="price" id="p4" readonly>
+                            </td>
+                          </tr>
+                        </table>
+                        <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                        <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                      </div>
+                    </div>
+
+                    <div class="card cardstyles" style="background-color:e7e8ed;" id="orange">
+                        <img src="./images/fruitsimages/orange.jpg" class="card-img-top cardimages" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Orange(కిచ్చిలి పండ్లు )</h5>
+                          <table>
+                            
+                            <tr>
+                                <td>Quantity(in kgs):</td>
+                                <td><div>
+                                    <button style="font-weight: 600;" onclick="orangesub()">-</button>
+                                    <input type="quantity" name="" id="q5" style="width:20%;margin:-5px;">
+                                    <button onclick="orangeadd()"> +</button>
+                                </div></td>
+                            </tr>
+                            <tr>
+                              <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                              <td><input type="radio" name="orange" id="abc5" value="50" onblur="forange(this.value)"unchecked>Rs.50/kg
+                                  <input type="radio" name="orange" id="abc5" value="80" onblur="forange(this.value)">Rs.80/kg
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                              <td>
+                                <input type="text" name="price" id="p5" readonly>
+                              </td>
+                            </tr>
+                          
+                          </table>
+                          <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                          <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                        </div>
+                      </div>
+
+                      <div class="card cardstyles" style="background-color:e7e8ed;" id="pomogranate">
+                          <img src="./images/fruitsimages/pomogranate.jpg" class="card-img-top cardimages" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Pomogranate(దానిమ్మ )</h5>
+                            <table>
+                              
+                              <tr>
+                                  <td>Quantity(in kgs):</td>
+                                  <td><div>
+                                      <button style="font-weight: 600;" onclick="pomogranatesub()">-</button>
+                                      <input type="quantity" name="" id="q6" style="width:20%;margin:-5px;">
+                                      <button onclick="pomogranateadd()">+</button>
+                                  </div></td>
+                              </tr>
+                              <tr>
+                                <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td><input type="radio" name="pomogranate" id="abc6" value="50" onblur="fpomogranate(this.value);" unchecked>Rs.50/kg
+                                    <input type="radio" name="pomogranate" id="abc6" value="80" onblur="fpomogranate(this.value);">Rs.80/kg
+                                </td>
+                              </tr>
+                              
+                              <tr>
+                                <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>
+                                  <input type="text" name="price" id="p6" readonly>
+                                </td>
+                              </tr>
+                            </table>
+                            <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                            <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                          </div>
+                        </div>
+
+                        <div class="card cardstyles" style="background-color:e7e8ed;" id="papaya">
+                            <img src="./images/fruitsimages/papaya.jpg" class="card-img-top cardimages" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="text-align: center;font-family: 'Ramabhadra', sans-serif;">Papaya(బొప్పాయి పండ్లు )</h5>
+                              <table>
+                                
+                                <tr>
+                                    <td>Quantity(in kgs):</td>
+                                    <td><div>
+                                        <button style="font-weight: 600;" onclick="papayasub()">-</button>
+                                        <input type="quantity" name="" id="q7" style="width:20%;margin:-5px;">
+                                        <button onclick="papayaadd()">+</button>
+                                    </div></td>
+                                </tr>
+                                <tr>
+                                  <td>Type:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                  <td><input type="radio" name="papaya" id="abc7" value="50" onblur="fpapaya(this.message)" unchecked>Rs.50/kg
+                                      <input type="radio" name="papaya" id="abc7" value="80" onblur="fpapaya(this.message)">Rs.80/kg
+                                  </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td>Price:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                  <td>
+                                    <input type="text" name="price" id="p7" readonly>
+                                  </td>
+                                </tr>
+                              </table>
+                              <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:left;margin:1%;">Check out</a>
+                              <a href="#" class="btn" style="background-color:282524;opacity:0.75;color:cornsilk;float:right;margin:1%">Add to Cart</a>
+                            </div>
+                        </div>
+
+        
+          </div>
+
+    </body>
+</html>

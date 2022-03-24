@@ -1,2 +1,0 @@
-This is master file in on master branch.
-This is the edited version especially for private branch.
